@@ -16,6 +16,8 @@
 
 header {
     grid-area: header;
+    background: rgb(118, 43, 125);
+    background: linear-gradient(90deg, rgba(118, 43, 125, 1) 24%, rgba(148, 186, 233, 1) 100%);
 }
 
 main {
@@ -28,21 +30,24 @@ footer {
 
 
 
-@media only screen and (max-width: 300px) {
- 
-    
-}
+@media only screen and (max-width: 300px) {}
 
 @media only screen and (max-width: 1100px) {
     .wrapper {
 
         grid-template-rows: 40px auto auto;
     }
-    
+
+    header {
+        position: fixed;
+        width: inherit;
+    }
+
 }
 
 @media only screen and (min-width: 1101px) {
   
+
     .wrapper {
 
         grid-template-rows: 100px auto auto;
