@@ -6,7 +6,7 @@ function toggleMenuDisplay() {
     var menu = document.querySelector(".nav-menu");
     if (mobileMedia.matches) { // If media query matches
         changeDisplayCSS(menuOpenButton, "nav_menu-btn--show", "nav_menu-btn--hide");
-        changeDisplayCSS(menuCloseButton, "nav_menu-btn--show", "nav_menu-btn--hide" );
+        changeDisplayCSS(menuCloseButton, "nav_menu-btn--show", "nav_menu-btn--hide");
         changeDisplayCSS(menu, "nav_menu--hide", "nav_menu--show");
 
     }
@@ -16,8 +16,8 @@ function toggleMenuDisplay() {
         if (menuOpenButton.classList.contains("nav_menu-btn--hide")
             && menuCloseButton.classList.contains("nav_menu-btn--hide")) {
 
-                changeDisplayCSS(menuOpenButton,"nav_menu-btn--hide", "nav_menu-btn--show" );
-                changeDisplayCSS(menu, "nav_menu--show", "nav_menu--hide");
+            changeDisplayCSS(menuOpenButton, "nav_menu-btn--hide", "nav_menu-btn--show");
+            changeDisplayCSS(menu, "nav_menu--show", "nav_menu--hide");
 
         }
 
@@ -28,25 +28,25 @@ function toggleMenuSymbol() {
 
     var menuOpenButton = document.querySelector(".nav_menu-btn--open");
     var menuCloseButton = document.querySelector(".nav_menu-btn--close");
+    var menu = document.getElementsByClassName("nav-menu")[0];
 
-    showOrHideElement(menuOpenButton, menuCloseButton);
+    showOrHideMainMenuElement(menuOpenButton, menuCloseButton, menu);
 }
 
-function showOrHideElement(menuOpenButton, menuCloseButton) {
-    var menu = document.getElementsByClassName("nav-menu")[0];
+function showOrHideMainMenuElement(menuOpenButton, menuCloseButton, menu) {
 
     if (menuOpenButton.classList.contains("nav_menu-btn--show")) {
 
         changeDisplayCSS(menuOpenButton, "nav_menu-btn--show", "nav_menu-btn--hide");
-        changeDisplayCSS(menuCloseButton, "nav_menu-btn--hide", "nav_menu-btn--show" );
+        changeDisplayCSS(menuCloseButton, "nav_menu-btn--hide", "nav_menu-btn--show");
         changeDisplayCSS(menu, "nav_menu--hide", "nav_menu--show");
 
     }
 
     else if (menuCloseButton.classList.contains("nav_menu-btn--show")) {
 
-        changeDisplayCSS(menuCloseButton, "nav_menu-btn--show", "nav_menu-btn--hide" );
-        changeDisplayCSS(menuOpenButton, "nav_menu-btn--hide", "nav_menu-btn--show" );
+        changeDisplayCSS(menuCloseButton, "nav_menu-btn--show", "nav_menu-btn--hide");
+        changeDisplayCSS(menuOpenButton, "nav_menu-btn--hide", "nav_menu-btn--show");
         changeDisplayCSS(menu, "nav_menu--show", "nav_menu--hide");
     }
 }
@@ -56,8 +56,41 @@ function changeDisplayCSS(menuButton, removeCSS, addCSS) {
     menuButton.classList.add(addCSS);
 }
 
+function toggleSubMenu() {
+    var subMenu = document.getElementsByClassName("nav-sub-menu ")[0];
+    var subMenuOpenButton = document.querySelector(".nav-sub-menu--button-open-menu");
+    var subMenuCloseButton = document.querySelector(".nav-sub-menu--button-closed-menu");
+
+    showOrHideSubMenuElement(subMenuOpenButton, subMenuCloseButton, subMenu);
+}
+
+function showOrHideSubMenuElement(subMenuOpenButton, subMenuCloseButton, subMenu) {
+
+    if (subMenuOpenButton.classList.contains("button-hide")) {
+
+        subMenuOpenButton.classList.remove("button-hide");
+        subMenuCloseButton.classList.add("button-hide");
+        subMenu.classList.remove("nav_sub-menu--hide");
+
+    }
+
+    else if (subMenuCloseButton.classList.contains("button-hide")) {
+
+        subMenuCloseButton.classList.remove("button-hide");
+        subMenuOpenButton.classList.add("button-hide");
+        subMenu.classList.add("nav_sub-menu--hide");
+
+
+    }
+}
+
+
 toggleMenuDisplay();
 window.addEventListener("resize", toggleMenuDisplay);
+var subMenuOpenButton = document.querySelector(".nav-sub-menu--button-closed-menu");
+var subMenuCloseButton = document.querySelector(".nav-sub-menu--button-open-menu");
+subMenuOpenButton.addEventListener("click", toggleSubMenu);
+subMenuCloseButton.addEventListener("click", toggleSubMenu);
 var menuOpenButton = document.querySelector(".nav_menu-btn--open");
 var menuCloseButton = document.querySelector(".nav_menu-btn--close");
 menuOpenButton.addEventListener("click", toggleMenuSymbol);
