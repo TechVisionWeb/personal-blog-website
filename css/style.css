@@ -66,11 +66,13 @@ footer {
     border-radius: 5px;
 }
 
-.nav_menu--show{
+.nav_menu-btn--show {
     display: flex !important;
+    align-items: center;
+    justify-content: center;
 }
 
-.nav_menu--hide{
+.nav_menu-btn--hide {
     display: none !important;
 }
 
@@ -116,10 +118,15 @@ footer {
         margin-left: 5px;
     }
 
+    .nav_menu-btn {
+        height: 30px;
+        width: auto;
+    }
+
 }
 
 @media only screen and (min-width: 1101px) {
-  
+
 
     .wrapper {
 
@@ -142,4 +149,5 @@ footer {
         width: 100%;
         padding-top: 1px;
     }
+
 }
