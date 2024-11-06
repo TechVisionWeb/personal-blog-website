@@ -66,17 +66,17 @@ footer {
     border-radius: 5px;
 }
 
-.nav_menu-btn--show {
+.nav_menu-btn--show,
+.nav_menu--show {
     display: flex !important;
     align-items: center;
     justify-content: center;
 }
 
-.nav_menu-btn--hide {
+.nav_menu-btn--hide,
+.nav_menu--hide {
     display: none !important;
 }
-
-
 
 @media only screen and (max-width: 300px) {}
 

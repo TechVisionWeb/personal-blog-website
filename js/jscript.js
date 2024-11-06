@@ -9,10 +9,14 @@ function toggleMenuDisplay() {
         changeDisplayCSS(menuCloseButton, "nav_menu-btn--show", "nav_menu-btn--hide" );
     }
     else {
-        if (menuOpenButton.classList.contains("nav_menu-btn--hide")) {
+        // Only change the display of a menu button to the default burger bar when both are hidden.
+        // Don't want it to change to a button a person hasn't pressed on, on resize in a mobile pixel range.
+        if (menuOpenButton.classList.contains("nav_menu-btn--hide")
+            && menuCloseButton.classList.contains("nav_menu-btn--hide")) {
 
                 changeDisplayCSS(menuOpenButton,"nav_menu-btn--hide", "nav_menu-btn--show" );
         }
+      
     }
 }
 
@@ -51,4 +55,3 @@ var menuOpenButton = document.querySelector(".nav_menu-btn--open");
 var menuCloseButton = document.querySelector(".nav_menu-btn--close");
 menuOpenButton.addEventListener("click", toggleMenuSymbol);
 menuCloseButton.addEventListener("click", toggleMenuSymbol);
-
