@@ -152,12 +152,66 @@ hr {
 
 }
 
+.footer__section-link--purple-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(84, 27, 89);
+    padding: 5px;
+    border-radius: 3px;
+}
 
+
+
+.footer__section--social-and-subscribe-form{
+    display: block;
+    position: relative;
+    width: fit-content;
+    margin-top: 5px;
+}
+.footer__section--social-and-subscribe-input {
+    margin-top: 5px;
+    height: 25px;
+}
+
+.footer__section--social-and-subscribe-label {
+    margin-top: -5px;
+    display: none;
+}
 @media only screen and (max-width: 300px) {
 
+    
+
+
+}
+@media only screen and (max-width: 500px){
     footer {
         flex-direction: column;
     }
+
+    .footer__section--social-and-subscribe {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .footer__section--social-and-subscribe-form{
+        margin-left: 20px;
+        margin-top:  20px;;
+    }
+}
+@media only screen and (min-width: 501px) and (max-width: 1099px) {
+
+    .footer__section--social-and-subscribe {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: start;
+    }
+
 }
 
 @media only screen and (max-width: 1100px) {
@@ -287,7 +341,7 @@ hr {
     }
 
     .footer__section-link-list {
-      margin-left: 20px;
+        margin-left: 20px;
 
     }
 
@@ -295,6 +349,27 @@ hr {
         display: flex;
         margin-top: 5px;
     }
+
+
+
+    .footer__section-link--purple-bg {
+
+        width: 200px;
+    }
+
+    .footer__section--social-and-subscribe-input {
+        width: 200px;
+    }
+
+    .footer__section--social-and-subscribe-form {
+        height: 100%;
+
+    }
+
+    .footer__section--social-and-subscribe-label {
+        margin-top: -5px;
+    }
+
 }
 
 @media only screen and (min-width: 1101px) {
@@ -418,6 +493,24 @@ hr {
     .footer__section-list-point {
         display: flex;
         margin-top: 5px;
+    }
+
+    .footer__section--social-and-subscribe {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: auto;
+
+
+    }
+
+    .footer__section-link--purple-bg {
+        width: 130px;
+    }
+
+    .footer__section--social-and-subscribe-input {
+        width: 200px;
     }
 
 }
