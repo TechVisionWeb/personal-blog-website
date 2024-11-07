@@ -156,6 +156,14 @@ footer {
       top: 40px;
       padding: 5px;
     }
+    .nav_link--social-media-item {
+       width: 100%;
+       max-width: 200px;
+       margin-top: 5px;
+       padding: 3px;
+
+    }
+   
 }
 
 @media only screen and (min-width: 1101px) {
@@ -197,5 +205,11 @@ footer {
 
     .nav_link--small-left-margin {
         margin-left: 10px;
+    }
+
+    .nav_link--social-media-item {
+       width: 40px;
+       height: 100%;
+       flex-shrink: 0;
     }
 }
