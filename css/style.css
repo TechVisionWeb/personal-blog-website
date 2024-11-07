@@ -115,7 +115,10 @@ footer {
     border: 1px solid black;
 }
 
-
+.nav_menu-btn--search {
+    position: absolute;
+    right: 0px;
+}
 @media only screen and (max-width: 300px) {}
 
 @media only screen and (max-width: 1100px) {
@@ -297,4 +300,10 @@ footer {
         margin-top: 5px;
     }
 
+
+    .nav_menu-btn--search {
+        width: 50px;
+        height: 100%;
+        font-size: 1.3rem;    
+    }
 }
