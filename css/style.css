@@ -78,6 +78,16 @@ footer {
     display: none !important;
 }
 
+.nav_link--purple {
+    background-color: rgb(84, 27, 89);
+    color: white;
+}
+
+.nav_link--font-style {
+    font-family: 'Dosis';
+    font-style: normal;
+}
+
 @media only screen and (max-width: 300px) {}
 
 @media only screen and (max-width: 1100px) {
@@ -123,6 +133,18 @@ footer {
         width: auto;
     }
 
+    .nav-menu {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      width: 100%;
+      height: fit-content;
+      background: rgba(0, 0, 0, 0.778);
+      left: 0;
+      top: 40px;
+      padding: 5px;
+    }
 }
 
 @media only screen and (min-width: 1101px) {
@@ -150,4 +172,19 @@ footer {
         padding-top: 1px;
     }
 
+
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav_link--main-menu-item {
+        width: 100px;
+        height: 100%;
+        flex-shrink: 0;
+    }
+
+    .nav_link--small-left-margin {
+        margin-left: 10px;
+    }
 }
