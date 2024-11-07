@@ -44,10 +44,6 @@ main {
     grid-area: main;
 }
 
-footer {
-    grid-area: footer;
-}
-
 .nav_link {
     text-decoration: none;
     border-radius: 5px;
@@ -119,6 +115,15 @@ footer {
     position: absolute;
     right: 0px;
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    grid-area: footer;
+    background-color: black;
+    
+}
+
 @media only screen and (max-width: 300px) {}
 
 @media only screen and (max-width: 1100px) {
@@ -135,10 +140,10 @@ footer {
    
 
     .nav_link--main-menu-item {
-     padding: 3px;
-     width: 100%;
-     min-width: 270px;
-     margin-top: 5px;
+        padding: 3px;
+        width: 100%;
+        min-width: 270px;
+        margin-top: 5px;
     }
 
     .nav_link--logo {
@@ -304,6 +309,6 @@ footer {
     .nav_menu-btn--search {
         width: 50px;
         height: 100%;
-        font-size: 1.3rem;    
+        font-size: 1.3rem;
     }
 }
