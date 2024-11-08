@@ -1,9 +1,8 @@
-
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.wrapper{
+.wrapper {
     display: grid;
     position: relative;
     grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
@@ -19,6 +18,15 @@ header {
     background: rgb(118, 43, 125);
     background: linear-gradient(90deg, rgba(118, 43, 125, 1) 24%, rgba(148, 186, 233, 1) 100%);
 }
+
+nav {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        margin: 5px;
+    }
 
 main {
     grid-area: main;
@@ -43,6 +51,7 @@ footer {
         width: inherit;
     }
 
+   
 }
 
 @media only screen and (min-width: 1101px) {
@@ -52,4 +61,5 @@ footer {
 
         grid-template-rows: 100px auto auto;
     }
+  
 }
