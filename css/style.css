@@ -20,13 +20,25 @@ header {
 }
 
 nav {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        width: calc(100% - 10px);
-        height: calc(100% - 10px);
-        margin: 5px;
-    }
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    margin: 5px;
+}
+
+.nav_link--logo-site-name {
+    color: white;
+    font-size: 1.0rem;
+    letter-spacing: 2.2px;
+    text-align: center;
+    font-family: "Annie Use Your Telescope", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(84, 27, 89);
+}
+
 
 main {
     grid-area: main;
@@ -36,7 +48,13 @@ footer {
     grid-area: footer;
 }
 
-
+.nav_link {
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 @media only screen and (max-width: 300px) {}
 
@@ -52,6 +70,32 @@ footer {
     }
 
    
+
+    .nav_link--logo {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        width: 120px;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        background-color: rgb(84, 27, 89);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 30px;
+    }
+
+    .nav_link--logo-img {
+        width: auto;
+        height: 20px;
+        line-height: 16px;
+    }
+
+    .nav_link--logo-site-name {
+        margin-left: 5px;
+    }
+
 }
 
 @media only screen and (min-width: 1101px) {
@@ -61,5 +105,21 @@ footer {
 
         grid-template-rows: 100px auto auto;
     }
-  
+
+    .nav_link--logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav_link--logo-img {
+        width: auto;
+        height: 73px;
+        line-height: 16px;
+    }
+
+    .nav_link--logo-site-name {
+        width: 100%;
+        padding-top: 1px;
+    }
 }
