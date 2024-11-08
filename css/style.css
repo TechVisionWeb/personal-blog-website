@@ -184,7 +184,10 @@ picture{
     height: fit-content;
     width: fit-content;
 }
-
+.hero {
+    width: fit-content;
+    height: fit-content;
+}
 .hero__img {
     width: 100%;
     height: auto;
