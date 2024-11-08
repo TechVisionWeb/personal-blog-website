@@ -178,6 +178,17 @@ hr {
     margin-top: -5px;
     display: none;
 }
+
+picture{
+    display: block;
+    height: fit-content;
+    width: fit-content;
+}
+
+.hero__img {
+    width: 100%;
+    height: auto;
+  }
 @media only screen and (max-width: 300px) {
 
     
@@ -512,5 +523,9 @@ hr {
     .footer__section--social-and-subscribe-input {
         width: 200px;
     }
+
+    /*-----   index only code  ----  */
+
+   
 
 }
