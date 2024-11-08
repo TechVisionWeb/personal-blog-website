@@ -103,6 +103,13 @@ footer {
 
    
 
+    .nav_link--main-menu-item {
+     padding: 3px;
+     width: 100%;
+     min-width: 270px;
+     margin-top: 5px;
+    }
+
     .nav_link--logo {
         position: absolute;
         display: flex;
