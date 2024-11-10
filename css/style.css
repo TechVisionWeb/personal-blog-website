@@ -277,6 +277,9 @@ hr {
     align-items: flex-end;
 }
 
+.index .hero--hide{
+    display: none !important;
+}
 
 @media only screen and (max-width: 300px) {
 
