@@ -197,7 +197,7 @@ hr {
     height: fit-content;
 }
 
-.index  .hero__img {
+.index .hero__img {
     width: 100%;
     height: auto;
 }
@@ -210,7 +210,8 @@ hr {
 
 }
 
-.index .title-container__title, .title-container__sub-title {
+.index .title-container__title,
+.title-container__sub-title {
     display: block;
     text-align: center;
     font-family: "Annie Use Your Telescope", serif;
@@ -220,7 +221,7 @@ hr {
     width: 100%;
 }
 
-.index .hero__button-container{
+.index .hero__button-container {
     position: absolute;
     width: 120px;
     display: flex;
@@ -228,14 +229,53 @@ hr {
     flex-direction: row;
     padding: 5px;
 }
-.index .hero__button{
+
+.index .hero__button {
     width: 30px;
     height: 30px;
-    border: 3px solid white ;
+    border: 3px solid white;
     border-radius: 50%;
-    background-color:  rgba(118, 43, 125, 1);
+    background-color: rgba(118, 43, 125, 1);
 }
 
+.index .hero__blog-information {
+    color: white;
+    font-family: 'Dosis';
+    font-style: normal;
+    padding: 5px;
+}
+
+
+.index .hero__sub-title,
+.index .hero__title {
+
+    font-family: 'Dosis';
+    font-style: normal;
+}
+
+.index .hero__blog-link-topic-and-date-container {
+    justify-content: space-between;
+    padding: 5px;
+    color: white;
+}
+
+.index .hero__read-more-link {
+ display: flex;
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.index .hero__blog-topic-and-date-container {
+    display: flex;
+    flex-direction: column;
+    height: 2.5rem;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 
 
 @media only screen and (max-width: 300px) {
@@ -274,11 +314,100 @@ hr {
 
     }
 
-    .index .title-container__sub-title{
+    .index .title-container__sub-title {
         font-size: 1.2rem;
     }
-    
 
+  /** index.html css only*/
+
+  .index .title-container__title--big {
+    font-size: 4rem;
+}
+
+.index .title-container__sub-title {
+    font-size: 2rem;
+}
+
+.index .hero__blog-information,
+.index .hero__title-information {
+    width: 100%;
+    background-color: rgb(80, 29, 85);
+
+}
+
+.index .hero__title-information {
+    padding: 3px;
+}
+
+.index .hero__title {
+    font-size: 1.2rem;
+}
+
+
+.index .hero__sub-title {
+    margin-top: 10px;
+    font-size: 1.0rem;
+}
+
+.index .hero__blog-link-topic-and-date-container { 
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+}
+
+@media only screen and (min-width: 501px) {
+    /** index.html css only*/
+
+    .index .title-container__title--big {
+        font-size: 4.5rem;
+    }
+
+    .index .title-container__sub-title {
+        font-size: 2.2rem;
+    }
+
+    .index .hero__blog-information {
+
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 400px;
+        background-color: rgba(80, 29, 85, 0.8)
+
+    }
+    .index .hero__title-information {
+        width: 100%;
+    }
+
+    .index .hero__title-information {
+        padding: 3px;
+    }
+
+    .index .hero__title {
+        font-size: 1.5rem;
+    }
+
+
+    .index .hero__sub-title {
+        margin-top: 5px;
+        font-size: 1.2rem;
+    }
+
+    .index .hero {
+       position: relative;
+    }
+
+
+    .index .hero__blog-link-topic-and-date-container { 
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+
+      
+    }
 }
 
 @media only screen and (min-width: 501px) and (max-width: 1099px) {
@@ -355,6 +484,7 @@ hr {
         top: 40px;
         padding: 5px;
     }
+
     .nav-menu__overflow-container {
         display: flex;
         flex-direction: column;
@@ -458,16 +588,6 @@ hr {
         margin-top: -5px;
     }
 
-    /** index.html css only*/
-
-    .index .title-container__title--big {
-        font-size: 4rem;
-    }
-
-    .index .title-container__sub-title{
-        font-size: 2rem;
-    }
-    
 
 }
 
@@ -518,12 +638,14 @@ hr {
         height: 100%;
         flex-shrink: 0;
     }
+
     .nav-menu__overflow-container {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: row;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
     }
+
     .nav-sub-menu-container {
         position: relative;
         display: flex;
@@ -616,14 +738,5 @@ hr {
         width: 200px;
     }
 
-    /** index.html css only*/
-
-    .index .title-container__title--big {
-        font-size: 4.5rem;
-    }
-
-    .index .title-container__sub-title{
-        font-size: 2.2rem;
-    }
-
+    
 }
