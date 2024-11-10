@@ -143,7 +143,10 @@ hr {
 }
 
 .footer__section--social-and-subscribe {
-    height: 150px;
+    display: flex;
+    /* height: 150px; */
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .footer__section-link {
@@ -832,16 +835,10 @@ hr {
         width: 200px;
     }
 
-<<<<<<< HEAD
-
-||||||| parent of bd811e3 (Test: added 3 LCO preview blogs boxes to test)
-    
-=======
     /**** index only    **/
     .index .blog-previews {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
->>>>>>> bd811e3 (Test: added 3 LCO preview blogs boxes to test)
 }
