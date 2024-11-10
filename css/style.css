@@ -17,6 +17,8 @@ header {
     grid-area: header;
     background: rgb(118, 43, 125);
     background: linear-gradient(90deg, rgba(118, 43, 125, 1) 24%, rgba(148, 186, 233, 1) 100%);
+    z-index: 10;
+
 }
 
 nav {
