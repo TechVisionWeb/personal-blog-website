@@ -433,6 +433,14 @@ hr {
    margin-bottom: 10px; 
 }
 
+/*** about only**/
+
+.about .title-container__title--small{
+    font-size: 1.8rem;
+    font-family: "Annie Use Your Telescope", serif;
+
+
+}
 @media only screen and (max-width: 300px) {
 
     .title-container__title--big {
