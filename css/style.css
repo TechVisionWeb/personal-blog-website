@@ -163,12 +163,13 @@ hr {
 
 
 
-.footer__section--social-and-subscribe-form{
+.footer__section--social-and-subscribe-form {
     display: block;
     position: relative;
     width: fit-content;
     margin-top: 5px;
 }
+
 .footer__section--social-and-subscribe-input {
     margin-top: 5px;
     height: 25px;
@@ -179,26 +180,55 @@ hr {
     display: none;
 }
 
-picture{
+/* index.html css only*/
+
+.index picture {
     display: flex;
     height: fit-content;
     width: fit-content;
 }
-.hero {
+
+.index .hero {
     width: fit-content;
     height: fit-content;
 }
-.hero__img {
+
+.index  .hero__img {
     width: 100%;
     height: auto;
-  }
-@media only screen and (max-width: 300px) {
+}
 
-    
-
+.index .title-container {
+    background: linear-gradient(90deg, rgba(118, 43, 125, 1) 24%, rgba(148, 186, 233, 1) 100%);
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
 
 }
-@media only screen and (max-width: 500px){
+
+.index .title-container__title, .title-container__sub-title {
+    display: block;
+    text-align: center;
+    font-family: "Annie Use Your Telescope", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    width: 100%;
+}
+
+
+
+
+@media only screen and (max-width: 300px) {
+
+    .title-container__title--big {
+        font-size: 2rem;
+
+
+    }
+}
+
+@media only screen and (max-width: 500px) {
     footer {
         flex-direction: column;
     }
@@ -209,14 +239,29 @@ picture{
         height: auto;
         justify-content: center;
         align-items: center;
-        
+
     }
 
-    .footer__section--social-and-subscribe-form{
+    .footer__section--social-and-subscribe-form {
         margin-left: 20px;
-        margin-top:  20px;;
+        margin-top: 20px;
+
     }
+
+    /** index.html css only*/
+
+    .index .title-container__title--big {
+        font-size: 2.5rem;
+
+    }
+
+    .index .title-container__sub-title{
+        font-size: 1.2rem;
+    }
+    
+
 }
+
 @media only screen and (min-width: 501px) and (max-width: 1099px) {
 
     .footer__section--social-and-subscribe {
@@ -225,6 +270,7 @@ picture{
         justify-content: space-evenly;
         align-items: start;
     }
+
 
 }
 
@@ -239,7 +285,7 @@ picture{
         width: inherit;
     }
 
-   
+
 
     .nav_link--main-menu-item {
         padding: 3px;
@@ -279,16 +325,16 @@ picture{
     }
 
     .nav-menu {
-      position: fixed;
-      display: flex;
-      flex-direction: column;
-      max-width: 300px;
-      width: 100%;
-      height: fit-content;
-      background: rgba(0, 0, 0, 0.778);
-      left: 0;
-      top: 40px;
-      padding: 5px;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        width: 100%;
+        height: fit-content;
+        background: rgba(0, 0, 0, 0.778);
+        left: 0;
+        top: 40px;
+        padding: 5px;
     }
 
     .nav-sub-menu-container {
@@ -383,6 +429,17 @@ picture{
     .footer__section--social-and-subscribe-label {
         margin-top: -5px;
     }
+
+    /** index.html css only*/
+
+    .index .title-container__title--big {
+        font-size: 4rem;
+    }
+
+    .index .title-container__sub-title{
+        font-size: 2rem;
+    }
+    
 
 }
 
@@ -527,8 +584,14 @@ picture{
         width: 200px;
     }
 
-    /*-----   index only code  ----  */
+    /** index.html css only*/
 
-   
+    .index .title-container__title--big {
+        font-size: 4.5rem;
+    }
+
+    .index .title-container__sub-title{
+        font-size: 2.2rem;
+    }
 
 }
