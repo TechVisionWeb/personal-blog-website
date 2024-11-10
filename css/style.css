@@ -260,7 +260,7 @@ hr {
 }
 
 .index .hero__read-more-link {
- display: flex;
+    display: flex;
     text-decoration: none;
     color: white;
     padding: 3px;
@@ -277,7 +277,7 @@ hr {
     align-items: flex-end;
 }
 
-.index .hero--hide{
+.index .hero--hide {
     display: none !important;
 }
 
@@ -321,43 +321,43 @@ hr {
         font-size: 1.2rem;
     }
 
-  /** index.html css only*/
+    /** index.html css only*/
 
-  .index .title-container__title--big {
-    font-size: 4rem;
-}
+    .index .title-container__title--big {
+        font-size: 4rem;
+    }
 
-.index .title-container__sub-title {
-    font-size: 2rem;
-}
+    .index .title-container__sub-title {
+        font-size: 2rem;
+    }
 
-.index .hero__blog-information,
-.index .hero__title-information {
-    width: 100%;
-    background-color: rgb(80, 29, 85);
+    .index .hero__blog-information,
+    .index .hero__title-information {
+        width: 100%;
+        background-color: rgb(80, 29, 85);
 
-}
+    }
 
-.index .hero__title-information {
-    padding: 3px;
-}
+    .index .hero__title-information {
+        padding: 3px;
+    }
 
-.index .hero__title {
-    font-size: 1.2rem;
-}
+    .index .hero__title {
+        font-size: 1.2rem;
+    }
 
 
-.index .hero__sub-title {
-    margin-top: 10px;
-    font-size: 1.0rem;
-}
+    .index .hero__sub-title {
+        margin-top: 10px;
+        font-size: 1.0rem;
+    }
 
-.index .hero__blog-link-topic-and-date-container { 
+    .index .hero__blog-link-topic-and-date-container {
 
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 501px) {
@@ -378,8 +378,8 @@ hr {
         left: 5px;
         width: 400px;
         background-color: rgba(80, 29, 85, 0.8)
-
     }
+
     .index .hero__title-information {
         width: 100%;
     }
@@ -399,17 +399,17 @@ hr {
     }
 
     .index .hero {
-       position: relative;
+        position: relative;
     }
 
 
-    .index .hero__blog-link-topic-and-date-container { 
+    .index .hero__blog-link-topic-and-date-container {
         display: flex;
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
 
-      
+
     }
 }
 
@@ -741,5 +741,5 @@ hr {
         width: 200px;
     }
 
-    
+
 }
