@@ -281,6 +281,51 @@ hr {
     display: none !important;
 }
 
+.index .blog-previews {
+    display: flex;
+    position: relative;
+    padding: 5px;
+    width: 100%;
+    height: fit-content;
+    border: 1px solid black;
+    justify-content: space-around;
+
+
+}
+
+.index .blog-previews__blog-preview {
+
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+
+.index .blog-previews__blog-preview-title {
+    display: flex;
+    align-items: center;
+    font-family: 'Dosis';
+    font-style: normal;
+    Width: 150px;
+    height: auto;
+    background-color: rgba(4, 4, 104, 0.9);
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px;
+
+
+}
+
+.index .blog-previews__blog-preview-img {
+    display: flex;
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.index .blog-previews__blog-preview-img:hover {
+    transform: scale(1.1)
+}
+
 @media only screen and (max-width: 300px) {
 
     .title-container__title--big {
@@ -353,11 +398,35 @@ hr {
     }
 
     .index .hero__blog-link-topic-and-date-container {
-
         display: flex;
         flex-direction: row;
         width: 100%;
     }
+    
+    /**** index only    **/
+    .index .blog-previews {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+
+    .index .blog-previews__blog-preview {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .index .blog-previews__blog-preview-title {
+        width: 120px;
+    }
+
+    .index .blog-previews__blog-preview-img {
+
+        margin-left: -10px;
+    }
+
+    
 }
 
 @media only screen and (min-width: 501px) {
@@ -411,6 +480,8 @@ hr {
 
 
     }
+
+
 }
 
 @media only screen and (min-width: 501px) and (max-width: 1099px) {
@@ -422,6 +493,26 @@ hr {
         align-items: start;
     }
 
+    /**** index only    **/
+    .index .blog-previews {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .index .blog-previews__blog-preview {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .index .blog-previews__blog-preview-title {
+        width: 150px;
+    }
+
+    .index .blog-previews__blog-preview-img {
+         margin-bottom: -5px;
+         z-index: 1;
+     }
 
 }
 
@@ -741,5 +832,16 @@ hr {
         width: 200px;
     }
 
+<<<<<<< HEAD
 
+||||||| parent of bd811e3 (Test: added 3 LCO preview blogs boxes to test)
+    
+=======
+    /**** index only    **/
+    .index .blog-previews {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+>>>>>>> bd811e3 (Test: added 3 LCO preview blogs boxes to test)
 }
