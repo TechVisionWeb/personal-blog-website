@@ -611,7 +611,6 @@ body:not(.index) .website-section__bullet-list  li {
     }
 
     header {
-        position: fixed;
         width: inherit;
     }
 

@@ -99,6 +99,7 @@ nav {
     font-family: 'Dosis';
     font-style: normal;
     text-align: center;
+    font-weight: normal;
 }
 
 
@@ -165,7 +166,6 @@ nav {
     }
 
     header {
-        position: fixed;
         width: inherit;
     }
 
@@ -336,7 +336,7 @@ nav {
         margin-left: 25px;
         height: 100%;
         width: 100px;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
 
