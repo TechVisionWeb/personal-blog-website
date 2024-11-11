@@ -415,12 +415,11 @@ hr {
     font-family: "Annie Use Your Telescope", serif;
     font-weight: 400;
     font-style: normal;
-    background: rgba(118, 43, 125, 1);
-    background: linear-gradient(90deg, rgba(118, 43, 125, 1) 24%, rgba(148, 186, 233, 1) 100%);
+    background: pink;
     border-left: 1px solid black;
     border-right: 1px solid black;
 
-    color: white;
+    color: black;
     text-align: center;
     font-size: 2rem;
 
@@ -443,7 +442,7 @@ hr {
 body:not(.index) .title-container__title--small {
     font-size: 1.8rem;
     font-family: "Annie Use Your Telescope", serif;
-    color: white;
+    color: black;
 }
 
 body:not(.index) p {
