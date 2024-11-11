@@ -1018,7 +1018,7 @@ body:not(.index) .website-section__bullet-list  li {
         position: relative;
         display: flex;
         flex-direction: column;
-        margin-left: 60px;
+        margin-left: 25px;
         height: 100%;
         width: 100px;
         justify-content: space-evenly;
