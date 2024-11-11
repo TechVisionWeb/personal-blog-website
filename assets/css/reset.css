@@ -50,3 +50,7 @@ table {
 button {
 	cursor: pointer;
 }
+
+strong{
+	font-weight: 800;
+}
