@@ -347,7 +347,7 @@ hr {
     font-style: normal;
     Width: 150px;
     height: auto;
-    background-color: rgba(4, 4, 104, 0.9);
+    background-color: rgb(84, 27, 89);
     color: white;
     font-size: 1.2rem;
     padding: 5px;
@@ -367,7 +367,7 @@ hr {
 }
 
 .index .large-preview-section__blog-preview-title {
-    background-color: rgba(4, 4, 104, 0.9);
+    background-color: rgb(84, 27, 89);
     font-family: 'dosis';
     font-style: 'normal';
     color: white;
