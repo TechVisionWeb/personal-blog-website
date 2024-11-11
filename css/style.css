@@ -479,16 +479,21 @@ body:not(.index) .website-section__text {
     flex-direction: column;
     justify-content: center;
     flex-basis: 60%;
+    align-items: flex-end;
 }
 
-body:not(.index) ul {
 
+
+body:not(.index) .website-section__bullet-list{
     list-style: square;
+    padding: 10px;
+    width: 90%;
+
 }
 
-body:not(.index) li {
-
+body:not(.index) .website-section__bullet-list  li {
     padding: 10px;
+
     font-family: 'dosis', "sans-serif";
 }
 
