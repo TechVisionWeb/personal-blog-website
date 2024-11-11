@@ -200,6 +200,8 @@ hr {
 .index .hero {
     width: fit-content;
     height: fit-content;
+    display: flex;
+    align-items: flex-end;
 }
 
 .index .hero__img {
