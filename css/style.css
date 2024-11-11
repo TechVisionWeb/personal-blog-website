@@ -270,7 +270,7 @@ hr {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 5px;   
+    padding: 5px;
 }
 
 .index .hero__blog-link-topic-and-date-container {
@@ -282,7 +282,8 @@ hr {
 
 
 
-.index .hero__read-more-link, .index .large-preview-section__read-more-link {
+.index .hero__read-more-link,
+.index .large-preview-section__read-more-link {
     display: flex;
     text-decoration: none;
     color: white;
@@ -434,34 +435,35 @@ hr {
 .index .large-preview-section {
     width: 100%;
     height: fit-content;
-   margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
-/*** about only**/
+/*** about and LCO only**/
 
-.about .title-container__title--small{
+body:not(.index) .title-container__title--small {
     font-size: 1.8rem;
     font-family: "Annie Use Your Telescope", serif;
     color: white;
 }
 
-.about p {
+body:not(.index) p {
     font-family: 'dosis';
     font-size: 1rem;
     padding: 1rem;
 
 }
 
-.about .about-website-section{
+body:not(.index) .website-section {
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     border: 1px solid black;
+    padding: 5px;
 }
 
-.about .about-website-section__img {
+body:not(.index) .website-section__img {
     width: 90%;
     height: 90%;
     max-width: 250px;
@@ -469,15 +471,26 @@ hr {
     background-color: pink;
 }
 
-.about .about-website-section__picture-container{
-    flex-basis: 250px; 
+body:not(.index) .website-section__picture-container {
+    flex-basis: 250px;
 }
 
-.about .about-website-section__text{
+body:not(.index) .website-section__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-basis: 60%;
+}
+
+body:not(.index) ul {
+
+    list-style: square;
+}
+
+body:not(.index) li {
+
+    padding: 10px;
+    font-family: 'dosis', "sans-serif";
 }
 
 @media only screen and (max-width: 300px) {
@@ -556,7 +569,7 @@ hr {
         flex-direction: row;
         width: 100%;
     }
-    
+
     /**** index only    **/
     .index .blog-previews {
         flex-direction: column;
@@ -616,9 +629,9 @@ hr {
         width: 100%;
     }
 
-    
 
-    
+
+
 
 }
 
@@ -739,22 +752,22 @@ hr {
 
 }
 
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 735px) {
 
     .index .large-preview-section {
-       width: 70%;
-       min-width: 250px;
-       margin-left:  auto;
-       margin-right: auto;
+        width: 70%;
+        min-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
 
     }
 
     /*** about **/
-    .about .about-website-section{
+    body:not(.index) .website-section {
 
-        flex-direction: column;    
-    
-        }
+        flex-direction: column;
+
+    }
 }
 
 @media only screen and (min-width: 900px) {
