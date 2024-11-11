@@ -15,14 +15,14 @@
 
 header {
     grid-area: header;
-    background: rgb(118, 43, 125);
-    background: linear-gradient(90deg, rgba(118, 43, 125, 1) 24%, rgba(148, 186, 233, 1) 100%);
+    background: rgb(255, 192, 203);
     z-index: 10;
+
 
 }
 
 .title-container {
-    background: linear-gradient(90deg, rgba(118, 43, 125, 1) 24%, rgba(148, 186, 233, 1) 100%);
+    background:  rgb(255, 192, 203);;
     width: 100%;
     height: fit-content;
     padding: 1rem;
@@ -210,6 +210,7 @@ hr {
     height: fit-content;
     display: flex;
     align-items: flex-end;
+    flex-direction: column;
 }
 
 .index .hero__img {
@@ -226,7 +227,7 @@ hr {
     font-family: "Annie Use Your Telescope", serif;
     font-weight: 400;
     font-style: normal;
-    color: white;
+    color: black;
     width: 100%;
 }
 
