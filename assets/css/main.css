@@ -318,6 +318,10 @@ body:not(.index) .website-section__bullet-list  li {
     font-family: 'dosis', "sans-serif";
 }
 
+figcaption {
+    font-family: 'dosis',sans-serif;
+}
+
 @media only screen and (max-width: 300px) {
 
     .title-container__title--big {
