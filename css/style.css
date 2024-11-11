@@ -108,7 +108,6 @@ main {
     font-family: 'Dosis';
     font-style: normal;
     text-align: center;
-    color: white;
 }
 
 
@@ -873,6 +872,8 @@ body:not(.index) li {
 
     .nav-sub-menu--title {
         margin-bottom: 10px;
+        color: white;
+
     }
 
     .nav-sub-menu--button {
